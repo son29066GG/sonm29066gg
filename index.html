@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Cá Nhân & Link Hub</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+        /* Style cho hình ảnh */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #00d2ff;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: #00d2ff;
+        }
+        p.subtitle {
+            font-size: 14px;
+            color: #d1d5db;
+            margin-bottom: 20px;
+        }
+        /* Trình phát nhạc */
+        .music-card {
+            background: rgba(0, 0, 0, 0.25);
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .music-title {
+            font-size: 13px;
+            color: #a1a1aa;
+            margin-bottom: 8px;
+        }
+        audio {
+            width: 100%;
+            height: 36px;
+            outline: none;
+        }
+        /* Danh sách nút link */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .link-btn {
+            display: block;
+            padding: 14px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .link-btn:hover {
+            background: #00d2ff;
+            color: #000000;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 1. HÌNH ẢNH (Thay link ảnh của bạn vào src) -->
+        <img src="https://picsum.photos/200" alt="Avatar" class="profile-img">
+
+        <h1>Xin chào!</h1>
+        <p class="subtitle">Chào mừng bạn đến với trang web của tôi</p>
+
+        <!-- 2. TRÌNH PHÁT NHẠC -->
+        <div class="music-card">
+            <div class="music-title">🎵 Bật nhạc nền ở đây:</div>
+            <audio controls preload="none">
+                <!-- Thay link file nhạc .mp3 của bạn vào dường dẫn dưới đây -->
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Trình duyệt của bạn không hỗ trợ phát âm thanh.
+            </audio>
+        </div>
+
+        <!-- 3. CÁC NÚT GẮN LINK TRANG WEB -->
+        <div class="links">
+            <a href="https://mediafire.com" target="_blank" class="link-btn">📥 Tải File / Resource Pack</a>
+            <a href="https://youtube.com" target="_blank" class="link-btn">🎬 Kênh YouTube</a>
+            <a href="https://github.com" target="_blank" class="link-btn">💻 Trang GitHub</a>
+        </div>
+    </div>
+
+</body>
+</html>
